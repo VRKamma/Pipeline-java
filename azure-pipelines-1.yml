@@ -7,7 +7,10 @@ trigger:
 - main
 
 pool:
-  SelfHost
+  name:SelfHost
+  demands:
+    - myCustomCapability   # exists check for myCustomCapability
+    - Agent.Version -equals 3.234.0
 
 steps:
 - task: Maven@3

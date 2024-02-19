@@ -10,7 +10,7 @@ pool:
   name: SelfHost
   demands:
   - myCustomCapability   # exists check for myCustomCapability
-  - Agent.Version -equals 3.234.0 # equals check for Agent.Version 2.144.0
+  - Agent.Version -equals 3.234.0 # equals check for Agent.Version 3.234.0
 
 steps:
 - task: Maven@3
